@@ -1,6 +1,6 @@
 let createPhoneNumber = ([3,1,6,6,1,7,3,4,4,0]) //!Puedes agregar o quitar dígitos para validar la lógica del código
 let numberPhone = phone (createPhoneNumber);
-console.log(typeof createPhoneNumber)
+
 function phone(num) {
     let newPhone = num.join('');
     newPhone = newPhone.replace(/(\d{3})(\d{3})(\d{4})/,"($1) $2-$3")
